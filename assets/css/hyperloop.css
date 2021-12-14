@@ -1,11 +1,3 @@
-/*
-
-Tooplate 2125 ArtXibition
-
-https://www.tooplate.com/view/2125-artxibition
-
-*/
-
 /* ---------------------------------------------
 Table of contents
 ------------------------------------------------
@@ -278,7 +270,7 @@ header
 
 .header-area .main-nav .logo {
   line-height: 80px;
-  color: #656c74;
+  color: red;
   font-size: 28px;
   font-weight: 700;
   float: left;
@@ -290,7 +282,7 @@ header
 
 .header-area .main-nav .logo em {
   font-style: normal;
-  color: #2a2a2a;
+  color: black;
   font-weight: 900;
 }
 
@@ -599,7 +591,7 @@ banner
 */
 
 .main-banner {
-  background-image: url(../images/banner_bg.jpg);
+  background-image: url(../images/banner_bg.gif);
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -942,63 +934,6 @@ Coming Events
 
 
 
-/*
----------------------------------------------
-Subscribe
----------------------------------------------
-*/
-
-.subscribe {
-  background-color: #7c838b;
-  padding: 30px 0px;
-}
-
-.subscribe h4 {
-  font-size: 18px;
-  color: #fff;
-  font-weight: 600;
-  margin-top: 10px;
-}
-
-.subscribe form input {
-  padding: 5px 10px;
-  width: 100%;
-  background-color: transparent;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid rgba(250,250,250,0.5);
-  outline: none;
-  font-size: 14px;
-  color: #fff;
-  font-weight: 200;
-  margin-top: 5px;
-}
-
-.subscribe form ::-webkit-input-placeholder { /* Edge */
-  color: #fff;
-  font-weight: 200;
-}
-
-.subscribe form .main-dark-button {
-  display: inline-block;
-  font-size: 14px;
-  padding: 12px 18px;
-  background-color: #343a3e;
-  color: #fff;
-  text-align: center;
-  font-weight: 500;
-  text-transform: capitalize;
-  transition: all .3s;
-  border: none;
-  outline: none;
-  width: 100%;
-}
-
-.subscribe form .main-dark-button:hover {
-  background-color: #656c74;
-}
-
 
 /* 
 ---------------------------------------------
@@ -1026,7 +961,7 @@ footer .address span {
 }
 
 footer .links {
-  text-align: center;
+  text-align: right;
 }
 
 footer .links ul li a {
@@ -1054,7 +989,6 @@ footer .under-footer {
 footer p.copyright {
   text-align: right;
 }
-
 .sub-footer {
   border-top: 1px solid #e4e4e4;
   margin-top: 30px;
@@ -2375,19 +2309,9 @@ responsive
     margin-top: 45px;
   }
 
-  .subscribe,
-  .subscribe input,
   footer .address,
   footer .hours {
     text-align: center; 
-  }
-
-  .subscribe h4 {
-    margin-bottom: 20px;
-  }
-
-  .subscribe .main-dark-button {
-    margin-top: 20px;
   }
 
   footer .address {
@@ -2399,7 +2323,7 @@ responsive
   }
 
   .sub-footer,
-  .sub-footer .social-links {
+  .sub-footer {
     text-align: center;
   }
 
