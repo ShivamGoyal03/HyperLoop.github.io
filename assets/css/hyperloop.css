@@ -271,7 +271,7 @@ header
 .header-area .main-nav .logo {
   line-height: 80px;
   color: red;
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
   float: left;
   -webkit-transition: all 0.3s ease 0s;
@@ -501,7 +501,7 @@ header
     padding: 0px;
   }
   .header-area .logo {
-    margin-left: 30px;
+    margin-left: 20px;
   }
   .header-area .menu-trigger {
     display: block !important;
@@ -996,7 +996,7 @@ footer p.copyright {
 }
 
 .sub-footer .logo span {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 800;
   color: #656c74;
 }
@@ -1007,7 +1007,7 @@ footer p.copyright {
 }
 
 .sub-footer .menu {
-  text-align: center;
+  text-align: right;
 }
 
 .sub-footer .menu ul li {
@@ -2324,7 +2324,7 @@ responsive
 
   .sub-footer,
   .sub-footer {
-    text-align: center;
+    text-align: right;
   }
 
   .coming-events .event-item {
