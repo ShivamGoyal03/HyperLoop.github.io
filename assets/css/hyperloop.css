@@ -186,12 +186,16 @@ body {
   opacity: 0.9;
 }
 
+.fa-fa-ticket {
+  margin-bottom: 0px;
+}
+
 .main-dark-button a {
   display: inline-block;
   font-size: 14px;
   padding: 12px 18px;
   background-color: #343a3e;
-  color: #fff;
+  color: rgb(160, 159, 159);
   text-align: center;
   font-weight: 500;
   text-transform: capitalize;
@@ -756,7 +760,7 @@ Amazing Venues
   margin-bottom: 6px;
 }
 
-img {
+.map-image img {
   width: 100%;
   overflow: hidden;
 }
@@ -1086,12 +1090,12 @@ About Us Page
 }
 
 .about-item {
-  margin-top: -282px;
+  margin-top: 50px;
 }
 
 .about-item .left-image img {
   width: 100%;
-  overflow: hidden;
+  overflow: auto;
 }
 
 .about-item .right-content {
@@ -1117,6 +1121,11 @@ About Us Page
   margin-bottom: 20px;
 }
 
+.col-lg-9 {
+  width:600px;
+  height: 600px;
+}
+
 .about-item  .down-content ul li {
   font-size: 16px;
   font-weight: 500;
@@ -1133,96 +1142,97 @@ About Us Page
 }
 
 .about-item  .down-content .main-dark-button {
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
-.about-upcoming-shows {
-  margin-top: 120px;
+.info {
+  margin-top: -170px;
+  height: 400px;
 }
 
-.about-upcoming-shows h2 {
+.info h2 {
   font-size: 30px;
   font-weight: 800;
   color: #2a2a2a;
   margin-bottom: 25px;
 }
 
-.about-upcoming-shows h4 {
+.info h4 {
   font-size: 22px;
   font-weight: 700;
   color: #2a2a2a;
   margin-bottom: 25px;;
 }
 
-.about-upcoming-shows ul{
+.info ul{
   margin-bottom: 30px;
 }
 
-.about-upcoming-shows ul li {
+.info ul li {
   font-size: 14px;
   font-weight: 300;
   margin-bottom: 10px;
 }
 
-.about-upcoming-shows p {
+.info p {
   margin-bottom: 30px;;
 }
 
-.about-upcoming-shows .text-button {
+.info .text-button {
   margin-top: -15px;
 }
 
-.about-upcoming-shows .next-shows {
+.info .next-shows {
   border: 1px dotted #d7dadc;
   padding: 20px;;
 }
 
-.about-upcoming-shows .next-shows h4 {
+.info .next-shows h4 {
   display: inline-block;
 }
 
-.about-upcoming-shows .next-shows h4 i {
+.info .next-shows h4 i {
   float: left;
   display: inline-block;
   margin-right: 10px;
   height: 30px;
 }
 
-.about-upcoming-shows .next-shows ul {
+.info .next-shows ul {
   margin-bottom: 0px;
 }
 
-.about-upcoming-shows .next-shows ul li {
+.info .next-shows ul li {
   border-bottom: 1px dotted #d7dadc;
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
 
-.about-upcoming-shows .next-shows ul li:last-child {
+.info .next-shows ul li:last-child {
   border-bottom: none;
   padding-bottom: 0;
   margin-bottom: 0;
 }
 
-.about-upcoming-shows .next-shows ul li h5 {
+.info .next-shows ul li h5 {
   font-size: 15px;
   font-weight: 700;
   color: #2a2a2a;
   margin-bottom: 15px;;
 }
 
-.about-upcoming-shows .next-shows ul li span {
+.info .next-shows ul li span {
   font-size: 14px;
   font-weight: 300;
   color: #2a2a2a;
 }
 
-.about-upcoming-shows .next-shows ul li .icon-button {
+.info .next-shows ul li .icon-button {
   float: right;
   margin-top: -35px;
 }
 
-.about-upcoming-shows .next-shows ul li .icon-button a {
+.info .next-shows ul li .icon-button a {
   width: 50px;
   height: 50px;
   background-color: #656c74;
@@ -1233,7 +1243,7 @@ About Us Page
   transition: all .3s;
 }
 
-.about-upcoming-shows .next-shows ul li .icon-button a:hover {
+.info .next-shows ul li .icon-button a:hover {
   background-color: #858b93;
 }
 
@@ -2341,7 +2351,7 @@ responsive
   .coming-events .left-button {
     display: none;
   }
-
+  
   .under-footer,
   footer p.copyright {
     text-align: center;
@@ -2355,7 +2365,7 @@ responsive
     border-left: 1px dotted #d7dadc;
   }
 
-  .about-upcoming-shows .next-shows {
+  .info .next-shows {
     margin-top: 30px;
   }
   
@@ -2404,7 +2414,7 @@ responsive
   .shows-events-tabs .tabs-content .pagination ul li,
   .shows-events-schedule .pagination ul li,
   .tickets-page .pagination ul li {
-    margin: 0px 0px!important;
+    margin: 0px 2px!important;
   }
 
   .ticket-details-page .right-content {
