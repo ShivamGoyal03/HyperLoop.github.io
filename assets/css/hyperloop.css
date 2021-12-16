@@ -875,6 +875,12 @@ Coming Events
   position: relative;
 }
 
+.coming-events-2 {
+  background-color: #656c74;
+  padding: 20px 0px;
+  position: relative;
+}
+
 .coming-events .left-button {
   text-align: center;
   position: absolute;
