@@ -2403,7 +2403,7 @@ responsive
   .shows-events-tabs .tabs-content .pagination ul li,
   .shows-events-schedule .pagination ul li,
   .tickets-page .pagination ul li {
-    margin: 0px 2px!important;
+    margin: 0px 0px!important;
   }
 
   .ticket-details-page .right-content {
