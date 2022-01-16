@@ -1,40 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
-
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+        rel="stylesheet">
     <title>Virgin HyperLoop</title>
-
-
     <!-- Additional CSS Files -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css">
     <link rel="stylesheet" href="assets/css/hyperloop.css">
+</head>
 
-    </head>
-    
-    <body>
-    
-    <!-- ***** Preloader Start ***** -->
-    <div id="js-preloader" class="js-preloader">
-      <div class="preloader-inner">
-        <span class="dot"></span>
-        <div class="dots">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </div>
-    <!-- ***** Preloader End ***** -->
-    
-    <!-- ***** Pre HEader ***** -->
+<body>
     <div class="pre-header">
         <div class="container">
             <div class="row">
@@ -60,11 +42,8 @@
                         <ul class="nav">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About Us</a></li>
-                            <li><a href="tickets.html" class="active">Tickets</a></li> 
-                        </ul>        
-                        <a class='menu-trigger'>
-                            <span>Menu</span>
-                        </a>
+                            <li><a href="tickets.html" class="active">Tickets</a></li>
+                        </ul>
                         <!-- ***** Menu End ***** -->
                     </nav>
                 </div>
@@ -73,57 +52,75 @@
     </header>
     <!-- ***** Header Area End ***** -->
 
-    <!-- ***** About Us Page ***** -->
-    <div class="page-heading-shows-events">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>Tickets Available Now!</h2>
-                    <span></span>
+    <div class="container">
+        <div class="title">Registration</div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Full Name</span>
+                    <input type="text" placeholder="Enter Your Name" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Email</span>
+                    <input type="text" placeholder="Enter Your Email" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Phone Number</span>
+                    <input type="text" placeholder="Enter Your Number" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="text" placeholder="Password" required>
+                </div>
+                <div class="input-box">
+                    <label>Departing</label><br>
+                    <input type="date" class="select-date">
+                </div>
+                <div class="input-box">
+                    <label>Returning</label><br>
+                    <input type="date" class="select-date">
+                </div>
+                <div class="input-box">
+                    <span class="details">Pickup Location</span>
+                    <select class="custom-select">
+                        <option value="1">Mumbai</option>
+                        <option value="2">Pune</option>
+                        <option value="3">Kolhapur</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <span class="details">Drop Location</span>
+                    <select class="custom-select">
+                        <option value="1">Mumbai</option>
+                        <option value="2">Pune</option>
+                        <option value="3">Kolhapur</option>
+                    </select>
+                </div>
+                <div class="gender-details">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                        <label for="">
+                            <span class="dot one"></span>
+                            <span class="gender">Male</span>
+                        </label>
+                        <label for="">
+                            <span class="dot one"></span>
+                            <span class="gender">Female</span>
+                        </label>
+                        <label for="">
+                            <span class="dot one"></span>
+                            <span class="gender">Prefer not to say</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register">
                 </div>
             </div>
-        </div>
+        </form>
     </div>
 
-    <div class="ticket-details-page">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="left-image">
-                        <img src="assets/images/tickets-details4.jpg" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="right-content">
-                        <h4>Pune Portal To Mumbai Portal</h4>
-                        <span>2184 Tickets still available</span>
-                        <ul>
-                            <li><i class="fa fa-clock-o"></i> 29/12/202X Wednesday 04:00 pm</li>
-                            <li><i class="fa fa-map-marker"></i>Pune Portal</li>
-                        </ul>
-                        <div class="quantity-content">
-                            <div class="left-content">
-                                <h6>Standard Ticket</h6>
-                                <p>₹1099 per ticket</p>
-                            </div>
-                            <div class="right-content">
-                                <div class="quantity buttons_added">
-                                    <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="total">
-                            <h4>Total: ₹1099.00</h4>
-                            <div class="main-dark-button"><a href="#">Purchase Tickets</a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="coming-events-2"></div>
-
-
     <!-- * Footer * -->
     <footer>
         <section id="Contact"></section>
@@ -181,8 +178,8 @@
             </div>
         </div>
     </footer>
-    
-    
+
+
 
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
@@ -195,14 +192,14 @@
     <script src="assets/js/scrollreveal.min.js"></script>
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/imgfix.min.js"></script> 
-    <script src="assets/js/mixitup.js"></script> 
+    <script src="assets/js/imgfix.min.js"></script>
+    <script src="assets/js/mixitup.js"></script>
     <script src="assets/js/accordions.js"></script>
     <script src="assets/js/quantity.js"></script>
-    
+
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
 
-  </body>
+</body>
 
 </html>
