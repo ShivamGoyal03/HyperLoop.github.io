@@ -10172,9 +10172,6 @@
 
 	})();
 
-	/******************************************************************************/
-	/*********************************** EFFECTS **********************************/
-	/******************************************************************************/
 
 	(function () {
 
@@ -10196,11 +10193,6 @@
 				for (i = 0; i < set.length; i++) {
 					if (set[i] !== null) {
 						val = element.data(dataSpace + set[i]);
-						// support: jQuery 1.6.2
-						// http://bugs.jquery.com/ticket/9917
-						// jQuery 1.6.2 incorrectly returns undefined for any falsy value.
-						// We can't differentiate between "" and 0 here, so we just assume
-						// empty string since it's likely to be a more common value...
 						if (val === undefined) {
 							val = "";
 						}
@@ -10519,12 +10511,9 @@
 	})();
 
 	/******************************************************************************/
-	/*********************************** EASING ***********************************/
-	/******************************************************************************/
 
 	(function () {
 
-		// based on easing equations from Robert Penner (http://www.robertpenner.com/easing)
 
 		var baseEasings = {};
 
@@ -10573,17 +10562,6 @@
 
 	var effect = $.effects;
 
-
-	/*!
-	 * jQuery UI Effects Blind 1.11.2
-	 * http://jqueryui.com
-	 *
-	 * Copyright 2014 jQuery Foundation and other contributors
-	 * Released under the MIT license.
-	 * http://jquery.org/license
-	 *
-	 * http://api.jqueryui.com/blind-effect/
-	 */
 
 
 	var effectBlind = $.effects.effect.blind = function (o, done) {
@@ -10649,18 +10627,6 @@
 			}
 		});
 	};
-
-
-	/*!
-	 * jQuery UI Effects Bounce 1.11.2
-	 * http://jqueryui.com
-	 *
-	 * Copyright 2014 jQuery Foundation and other contributors
-	 * Released under the MIT license.
-	 * http://jquery.org/license
-	 *
-	 * http://api.jqueryui.com/bounce-effect/
-	 */
 
 
 	var effectBounce = $.effects.effect.bounce = function (o, done) {
@@ -10761,17 +10727,6 @@
 	};
 
 
-	/*!
-	 * jQuery UI Effects Clip 1.11.2
-	 * http://jqueryui.com
-	 *
-	 * Copyright 2014 jQuery Foundation and other contributors
-	 * Released under the MIT license.
-	 * http://jquery.org/license
-	 *
-	 * http://api.jqueryui.com/clip-effect/
-	 */
-
 
 	var effectClip = $.effects.effect.clip = function (o, done) {
 		// Create element
@@ -10825,17 +10780,6 @@
 	};
 
 
-	/*!
-	 * jQuery UI Effects Drop 1.11.2
-	 * http://jqueryui.com
-	 *
-	 * Copyright 2014 jQuery Foundation and other contributors
-	 * Released under the MIT license.
-	 * http://jquery.org/license
-	 *
-	 * http://api.jqueryui.com/drop-effect/
-	 */
-
 
 	var effectDrop = $.effects.effect.drop = function (o, done) {
 
@@ -10887,18 +10831,6 @@
 	};
 
 
-	/*!
-	 * jQuery UI Effects Explode 1.11.2
-	 * http://jqueryui.com
-	 *
-	 * Copyright 2014 jQuery Foundation and other contributors
-	 * Released under the MIT license.
-	 * http://jquery.org/license
-	 *
-	 * http://api.jqueryui.com/explode-effect/
-	 */
-
-
 	var effectExplode = $.effects.effect.explode = function (o, done) {
 
 		var rows = o.pieces ? Math.round(Math.sqrt(o.pieces)) : 3,
@@ -10948,8 +10880,6 @@
 						top: -i * height
 					})
 
-					// select the wrapper - make it overflow: hidden and absolute positioned based on
-					// where the original was located +left and +top equal to the size of pieces
 					.parent()
 					.addClass("ui-effects-explode")
 					.css({
@@ -10981,18 +10911,6 @@
 	};
 
 
-	/*!
-	 * jQuery UI Effects Fade 1.11.2
-	 * http://jqueryui.com
-	 *
-	 * Copyright 2014 jQuery Foundation and other contributors
-	 * Released under the MIT license.
-	 * http://jquery.org/license
-	 *
-	 * http://api.jqueryui.com/fade-effect/
-	 */
-
-
 	var effectFade = $.effects.effect.fade = function (o, done) {
 		var el = $(this),
 			mode = $.effects.setMode(el, o.mode || "toggle");
@@ -11006,18 +10924,6 @@
 			complete: done
 		});
 	};
-
-
-	/*!
-	 * jQuery UI Effects Fold 1.11.2
-	 * http://jqueryui.com
-	 *
-	 * Copyright 2014 jQuery Foundation and other contributors
-	 * Released under the MIT license.
-	 * http://jquery.org/license
-	 *
-	 * http://api.jqueryui.com/fold-effect/
-	 */
 
 
 	var effectFold = $.effects.effect.fold = function (o, done) {
@@ -11079,18 +10985,6 @@
 			});
 
 	};
-
-
-	/*!
-	 * jQuery UI Effects Highlight 1.11.2
-	 * http://jqueryui.com
-	 *
-	 * Copyright 2014 jQuery Foundation and other contributors
-	 * Released under the MIT license.
-	 * http://jquery.org/license
-	 *
-	 * http://api.jqueryui.com/highlight-effect/
-	 */
 
 
 	var effectHighlight = $.effects.effect.highlight = function (o, done) {

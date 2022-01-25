@@ -52,72 +52,101 @@
     </header>
     <!-- ***** Header Area End ***** -->
 
-    <div class="container">
-        <div class="title">Registration</div>
-        <form action="#">
-            <div class="user-details">
-                <div class="input-box">
-                    <span class="details">Full Name</span>
-                    <input type="text" placeholder="Enter Your Name" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">Email</span>
-                    <input type="text" placeholder="Enter Your Email" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">Phone Number</span>
-                    <input type="text" placeholder="Enter Your Number" required>
-                </div>
-                <div class="input-box">
-                    <span class="details">Password</span>
-                    <input type="text" placeholder="Password" required>
-                </div>
-                <div class="input-box">
-                    <label>Departing</label><br>
-                    <input type="date" class="select-date">
-                </div>
-                <div class="input-box">
-                    <label>Returning</label><br>
-                    <input type="date" class="select-date">
-                </div>
-                <div class="input-box">
-                    <span class="details">Pickup Location</span>
-                    <select class="custom-select">
-                        <option value="1">Mumbai</option>
-                        <option value="2">Pune</option>
-                        <option value="3">Kolhapur</option>
-                    </select>
-                </div>
-                <div class="input-box">
-                    <span class="details">Drop Location</span>
-                    <select class="custom-select">
-                        <option value="1">Mumbai</option>
-                        <option value="2">Pune</option>
-                        <option value="3">Kolhapur</option>
-                    </select>
-                </div>
-                <div class="gender-details">
-                    <span class="gender-title">Gender</span>
-                    <div class="category">
-                        <label for="">
-                            <span class="dot one"></span>
-                            <span class="gender">Male</span>
-                        </label>
-                        <label for="">
-                            <span class="dot one"></span>
-                            <span class="gender">Female</span>
-                        </label>
-                        <label for="">
-                            <span class="dot one"></span>
-                            <span class="gender">Prefer not to say</span>
-                        </label>
+    <div class="register">
+        <div class="registration">
+            <div class="title-register">Registration</div>
+            <form action="" id="registrations">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" id="full_name" placeholder="Enter Your Name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" id="email" placeholder="Enter Your Email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" id="phone_number" placeholder="Enter Your Number" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Password</span>
+                        <input type="password" id="password" placeholder="Password" required>
+                        <span class="eye" onclick="myFunction()">
+                            <i id="hide1" class="fa fa-eye"></i>
+                            <i id="hide2" class="fa fa-eye-slash"></i>
+                        </span>
+                    </div>
+                    <script>
+                        function myFunction() {
+                            var x = document.getElementById("password");
+                            var y = document.getElementById("hide1");
+                            var z = document.getElementById("hide2");
+
+                            if (x.type === 'password') {
+                                x.type = "text";
+                                y.style.display = "block";
+                                z.style.display = "none";
+                            }
+                            else {
+                                x.type = "password";
+                                y.style.display = "none";
+                                z.style.display = "block";
+                            }
+                        }
+                    </script>
+                    <div class="input-box">
+                        <label>Departing</label>
+                        <input type="date" id="departing" class="select-date">
+                    </div>
+                    <div class="input-box">
+                        <label>Returning</label>
+                        <input type="date" id="returning" class="select-date">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Pickup Location</span>
+                        <select class="custom-select" id="pickup">
+                            <option disabled selected>Pickup Location</option>
+                            <option value="1">Mumbai</option>
+                            <option value="2">Pune</option>
+                            <option value="3">Kolhapur</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Drop Location</span>
+                        <select class="custom-select" id="drop">
+                            <option disabled selected>Drop Location</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Kolhapur">Kolhapur</option>
+                        </select>
+                    </div>
+                    <div class="gender-details">
+                        <span class="gender-title">Gender</span>
+                        <input type="radio" name="gender" id="male">
+                        <input type="radio" name="gender" id="female">
+                        <input type="radio" name="gender" id="none">
+                        <div class="gender-category" id="gender">
+                            <label for="male">
+                                <span class="dot one"></span>
+                                <span class="gender">Male</span>
+                            </label>
+                            <label for="female">
+                                <span class="dot two"></span>
+                                <span class="gender">Female</span>
+                            </label>
+                            <label for="none">
+                                <span class="dot three"></span>
+                                <span class="gender">Prefer not to say</span>
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <div class="button">
-                    <input type="submit" value="Register">
+                    <button type="button" id="register-button">Register</button>
                 </div>
-            </div>
-        </form>
+            </form>
+        </div>
     </div>
 
     <div class="coming-events-2"></div>
@@ -178,9 +207,6 @@
             </div>
         </div>
     </footer>
-
-
-
     <!-- jQuery -->
     <script src="assets/js/jquery-2.1.0.min.js"></script>
 
@@ -196,10 +222,8 @@
     <script src="assets/js/mixitup.js"></script>
     <script src="assets/js/accordions.js"></script>
     <script src="assets/js/quantity.js"></script>
-
     <!-- Global Init -->
     <script src="assets/js/custom.js"></script>
-
 </body>
 
 </html>
