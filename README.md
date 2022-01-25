@@ -5,6 +5,7 @@
 * We have to form a basic idea of how we can control passengers during peak rush hours or normal days. So, the passenger can settle down in a limited time.
     * [Click here to view website live!](https://shivam-090.github.io/HyperLoop.github.io/)<br>
 <br>
+
 * Our objectives for the hyperloop are:
     * Shorten the waiting time of passengers' journey.
     * To best optimize the passenger flow.
