@@ -11,7 +11,6 @@
     * To best optimize the passenger flow.
     * To make hyperloop more convenient for commercial use.
     * Use of Real-time monitoring technology. 
-<br>
 
 * **Made by Team ID-HO-221993**
 
@@ -21,8 +20,6 @@
 - [Shivam Saini](https://github.com/Phoenix-07)
 - [Shreya](https://github.com/Shreya2507)
 - [Rhythm](https://github.com/rym29)
-
-<br>
 
 <h2>Tools and languages used</h2>
 
