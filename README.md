@@ -3,7 +3,7 @@
 <p align ="center"><img src='./assets/images/virginLogo.png' width="150" ></p>
 
 * We have to form a basic idea of how we can control passengers during peak rush hours or normal days. So, the passenger can settle down in a limited time.
-    * [Click here to view website live!](https://shivam-090.github.io/HyperLoop.github.io/)
+    * [Click here to view website live!](https://ShivamGoyal03.github.io/HyperLoop.github.io/)
 
 * Our objectives for the hyperloop are:
     * Shorten the waiting time of passengers' journey.
@@ -15,7 +15,7 @@
 
 <h1>Contributors</h1>
 
-- [Shivam](https://github.com/Shivam-090)
+- [Shivam](https://github.com/ShivamGoyal03)
 - [Shivam Saini](https://github.com/Phoenix-07)
 - [Shreya](https://github.com/Shreya2507)
 - [Rhythm](https://github.com/rym29)
@@ -26,4 +26,4 @@
 
 # <h1>License</h1>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Shivam-090/HyperLoop.github.io/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/ShivamGoyal03/HyperLoop.github.io/blob/master/LICENSE)
